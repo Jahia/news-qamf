@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1522856316638
+Bnd-LastModified: 1522857263722
 Build-Jdk: 1.8.0_92
 Built-By: hichem
 Bundle-Category: jahia-module
@@ -16,31 +16,31 @@ Implementation-Title: Jahia News QA MF
 Implementation-URL: http://www.jahia.com
 Implementation-Vendor: Jahia Solutions Group SA
 Implementation-Version: 2.0.4
-Import-Package: org.jahia.data.viewhelper.principal,org.jahia.services.u
- sermanager,org.jahia.taglibs.user;version="[7.0,8)",org.jahia.utils,org
- .jahia.taglibs.jcr;version="[7.0,8)",org.jahia.taglibs.jcr.query;versio
- n="[7.0,8)",org.apache.commons.lang.math;version="[2.6,3)",org.jahia.ta
- glibs.template.pager;version="[7.0,8)",org.jahia.taglibs.utility.sitepr
- operties;version="[7.0,8)",javax.jcr;version="[2.0,3)",org.apache.commo
- ns.lang;version="[2.6,3)",org.jahia.services.seo,org.apache.taglibs.uns
- tandard;version="[7.0,8)",org.jahia.taglibs.query;version="[7.0,8)",org
- .jahia.taglibs.utility.constants;version="[7.0,8)",org.jahia.services.c
- ontent,org.jahia.services.content.decorator,javax.servlet.http;version=
- "[3.0,4)",org.jahia.taglibs.template.layoutmanager;version="[7.0,8)",or
- g.apache.taglibs.standard.tag.rt.fmt,org.jahia.taglibs.utility.i18n;ver
- sion="[7.0,8)",org.apache.taglibs.standard.functions,org.jahia.defaults
- .config.spring,org.jahia.taglibs.utility;version="[7.0,8)",org.jahia.ta
- glibs.utility.session;version="[7.0,8)",org.jahia.services.render.scrip
- ting,org.jahia.taglibs;version="[7.0,8)",org.slf4j;version="[1.6,2)",or
+Import-Package: javax.jcr;version="[2.0,3)",org.jahia.services.content.d
+ ecorator,org.jahia.taglibs.jcr.query;version="[7.0,8)",org.jahia.utils,
+ org.jahia.taglibs.template.include;version="[7.0,8)",org.jahia.taglibs.
+ template.pager;version="[7.0,8)",org.apache.taglibs.unstandard;version=
+ "[7.0,8)",org.jahia.taglibs.utility.siteproperties;version="[7.0,8)",or
  g.apache.taglibs.standard.tag.common.core,org.apache.taglibs.standard.t
- ag.rt.core,org.jahia.services,org.jahia.services.content.nodetypes,org.
- jahia.modules.seo.rules,org.jahia.taglibs.internal.date;version="[7.0,8
- )",org.jahia.services.content.nodetypes.initializers,org.jahia.exceptio
- ns,org.jahia.taglibs.template;version="[7.0,8)",org.jahia.taglibs.templ
- ate.gwt;version="[7.0,8)",org.apache.commons.id,org.apache.taglibs.stan
- dard.tei,org.jahia.taglibs.template.include;version="[7.0,8)",org.jahia
- .taglibs.jcr.node;version="[7.0,8)",org.jahia.services.content.rules,or
- g.jahia.services.render,org.jahia.taglibs.functions;version="[7.0,8)"
+ ei,org.jahia.taglibs.jcr.node;version="[7.0,8)",org.jahia.services.cont
+ ent,org.jahia.taglibs.user;version="[7.0,8)",org.jahia.services.render.
+ scripting,org.jahia.services.seo,org.apache.taglibs.standard.tag.rt.cor
+ e,org.jahia.taglibs.utility.session;version="[7.0,8)",org.apache.common
+ s.id,org.jahia.modules.seo.rules,org.apache.commons.lang.math;version="
+ [2.6,3)",org.jahia.data.viewhelper.principal,org.jahia.services.content
+ .nodetypes,org.apache.commons.lang;version="[2.6,3)",org.slf4j;version=
+ "[1.6,2)",org.jahia.taglibs.jcr;version="[7.0,8)",org.jahia.taglibs.que
+ ry;version="[7.0,8)",org.jahia.defaults.config.spring,org.jahia.excepti
+ ons,org.jahia.services.render,org.jahia.services.usermanager,org.jahia.
+ services.content.rules,org.jahia.taglibs.template.gwt;version="[7.0,8)"
+ ,org.jahia.taglibs;version="[7.0,8)",org.jahia.services.content.nodetyp
+ es.initializers,org.jahia.taglibs.utility;version="[7.0,8)",javax.servl
+ et.http;version="[3.0,4)",org.jahia.taglibs.utility.constants;version="
+ [7.0,8)",org.apache.taglibs.standard.tag.rt.fmt,org.apache.taglibs.stan
+ dard.functions,org.jahia.services,org.jahia.taglibs.utility.i18n;versio
+ n="[7.0,8)",org.jahia.taglibs.template.layoutmanager;version="[7.0,8)",
+ org.jahia.taglibs.functions;version="[7.0,8)",org.jahia.taglibs.interna
+ l.date;version="[7.0,8)",org.jahia.taglibs.template;version="[7.0,8)"
 Jahia-Depends: default,grid,seo
 Jahia-GroupId: org.jahia.modules
 Jahia-Module-Type: module
@@ -68,7 +68,8 @@ Require-Capability: com.jahia.services.content; filter:="(nodetypes=jmix
  (nodetypes=jnt:modules)",com.jahia.services.content; filter:="(nodetype
  s=jnt:portletFolder)",com.jahia.services.content; filter:="(nodetypes=j
  nt:row)",com.jahia.services.content; filter:="(nodetypes=jnt:templatesF
- older)",com.jahia.services.content; filter:="(nodetypes=mix:title)"
+ older)",com.jahia.services.content; filter:="(nodetypes=jnt:translation
+ )",com.jahia.services.content; filter:="(nodetypes=mix:title)"
 Specification-Title: Jahia News QA MF
 Specification-Vendor: Jahia Solutions Group SA
 Specification-Version: 2.0.4
