@@ -5,7 +5,7 @@
             j:installedModules="default"
             j:modulePriority="0"
             j:moduleType="module"
-            j:title="Jahia News"
+            j:title="Jahia News QA MF"
             jcr:primaryType="jnt:module">
                 
                 <portlets jcr:primaryType="jnt:portletFolder"/>
@@ -14,7 +14,7 @@
                 <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
                     <files jcr:primaryType="jnt:folder"/>
                     <contents jcr:primaryType="jnt:contentFolder"/>
-                    <news-template j:applyOn="jnt:news"
+                    <news-template j:applyOn="jnt:newsQamf"
                            j:defaultTemplate="true"
                            j:priority="100"
                            jcr:primaryType="jnt:contentTemplate">
@@ -25,7 +25,7 @@
                             <mainResourceDisplay j:mainResourceView="fullpage" jcr:primaryType="jnt:mainResourceDisplay"/>
                         </row-col1>
                     </news-template>
-                    <news-template-link j:applyOn="jnt:news"
+                    <news-template-link j:applyOn="jnt:newsQamf"
                                 j:defaultTemplate="false"
                                 j:priority="100"
                                 jcr:primaryType="jnt:contentTemplate">
