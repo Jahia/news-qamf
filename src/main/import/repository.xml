@@ -2,11 +2,11 @@
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
     <modules jcr:primaryType="jnt:modules">
         <news-qamf j:dependencies="default grid seo"
-            j:installedModules="default"
-            j:modulePriority="0"
-            j:moduleType="module"
-            j:title="Jahia News QA MF"
-            jcr:primaryType="jnt:module">
+                 j:installedModules="default"
+                 j:modulePriority="0"
+                 j:moduleType="module"
+                 j:title="Jahia News QA MF"
+                 jcr:primaryType="jnt:module">
                 
                 <portlets jcr:primaryType="jnt:portletFolder"/>
                 <files jcr:primaryType="jnt:folder"/>
@@ -14,7 +14,7 @@
                 <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
                     <files jcr:primaryType="jnt:folder"/>
                     <contents jcr:primaryType="jnt:contentFolder"/>
-                    <news-template j:applyOn="jnt:newsQamf"
+                    <news-template j:applyOn="jnt:newsQamf jnt:otherNewsQamf"
                            j:defaultTemplate="true"
                            j:hiddenTemplate="false"
                            j:priority="100"
@@ -30,7 +30,7 @@
                                  jcr:primaryType="jnt:translation"
                                  jcr:title="news-template"/>
                     </news-template>
-                    <news-template-link j:applyOn="jnt:newsQamf"
+                    <news-template-link j:applyOn="jnt:newsQamf jnt:otherNewsQamf"
                                 j:defaultTemplate="false"
                                 j:hiddenTemplate="false"
                                 j:priority="100"
@@ -41,11 +41,27 @@
                         <row-col1 jcr:primaryType="jnt:contentList">
                             <mainResourceDisplay j:mainResourceView="link" jcr:primaryType="jnt:mainResourceDisplay"/>
                         </row-col1>
-                           <j:translation_en jcr:language="en"
+                        <j:translation_en jcr:language="en"
                                  jcr:mixinTypes="mix:title"
                                  jcr:primaryType="jnt:translation"
                                  jcr:title="news-template-link"/>
                     </news-template-link>
+                    <news-template-large j:applyOn="jnt:newsQamf jnt:otherNewsQamf"
+                                 j:defaultTemplate="false"
+                                 j:hiddenTemplate="false"
+                                 j:priority="100"
+                                 jcr:primaryType="jnt:contentTemplate">
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <row column="1col16" jcr:primaryType="jnt:row"/>
+                        </pagecontent>
+                        <row-col1 jcr:primaryType="jnt:contentList">
+                            <mainResourceDisplay j:mainResourceView="large" jcr:primaryType="jnt:mainResourceDisplay"/>
+                        </row-col1>
+                        <j:translation_en jcr:language="en"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="news-template-large"/>
+                    </news-template-large>
                 </templates>
                 
             </news-qamf>
